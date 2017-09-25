@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,16 +11,15 @@
 
         <include layout="@layout/toolbar" />
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorTopBar"
             android:gravity="center_vertical|center_horizontal|center"
-            android:paddingBottom="8dp">
+            android:paddingBottom="12dp">
 
 
-            <TextView
+            <ir.msit87.mydigistore.view.AMTextView
                 android:id="@+id/txtListPage"
                 android:layout_width="100dp"
                 android:layout_height="32dp"
@@ -33,7 +33,7 @@
             <!--android:layout_width="UNKNOWN_DATA_0x6001"-->
             <!--android:layout_height="UNKNOWN_DATA_0x2001"-->
 
-            <TextView
+            <ir.msit87.mydigistore.view.AMTextView
                 android:id="@+id/txtMapPage"
                 android:layout_width="100dp"
                 android:layout_height="32dp"
@@ -53,7 +53,139 @@
         </LinearLayout>
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical|center_horizontal|center">
+                <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
+                <!--android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">-->
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    card:cardBackgroundColor="#ffffff"
+                    card:cardCornerRadius="18dp"
+                    card:cardElevation="4dp"
+                    card:cardUseCompatPadding="false">
+                    <!--android:layout_width="UNKNOWN_DATA_0x12c01"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x2401"-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+
+
+                        <ImageView
+                            android:id="@+id/imgSearch"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:contentDescription="search"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_search_black" />
+                        <!--android:layout_height="UNKNOWN_DATA_0x2401"-->
+                        <!--android:layout_width="UNKNOWN_DATA_0x2401"-->
+
+                        <ir.msit87.mydigistore.view.AMEditText
+                            android:id="@+id/edtSearch"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:contentDescription="Enter restaurant name to search"
+                            android:hint="@string/searchBarHint"
+                            android:imeOptions="actionNone|actionGo|actionSearch|actionNext|actionDone|actionPrevious"
+
+
+                            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                            android:layout_margin="0dp"
+                            android:background="#00ffffff"
+                            android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+                            android:lines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="13dp"   />
+                        <!--<com.hollowsoft.library.fontdroid.EditText-->
+                        <!--style="@style/SearchBarEditText"-->
+                        <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
     </LinearLayout>
 
+
+    <LinearLayout
+        android:id="@+id/lytShowcaseParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lytShowcase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="100dp"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgShowcaseArrowUp"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="2dp"
+                android:paddingBottom="20dp"
+                android:src="@mipmap/show_case_arrow_up"
+                android:visibility="visible" />
+            <!--android:layout_height="UNKNOWN_DATA_0x4601"-->
+
+
+            <ImageView
+                android:id="@+id/imgShowcaseArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:paddingTop="20dp"
+                android:src="@mipmap/show_case_arrow_down"
+                android:visibility="visible" />
+            <!--android:layout_height="UNKNOWN_DATA_0x4601"-->
+
+
+            <ImageView
+                android:id="@+id/imgShowcase"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@mipmap/show_case_hand_no_thump"
+                android:visibility="visible" />
+            <!--android:layout_height="UNKNOWN_DATA_0x3c01"-->
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

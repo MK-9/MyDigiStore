@@ -68,7 +68,7 @@
         </LinearLayout>
 
 
-        <TextView
+        <ir.msit87.mydigistore.view.AMTextView
             android:id="@+id/txtTitle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
