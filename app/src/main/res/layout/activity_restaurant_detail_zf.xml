@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0">
+            <!--android:layout_height="UNKNOWN_DATA_0x1"-->
+
+
+            <ru.noties.scrollable.ScrollableLayout
+                android:id="@+id/scrollableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scrollable_closeUpAnimationMillis="250"
+                app:scrollable_considerIdleMillis="125"
+                app:scrollable_defaultCloseUp="true"
+                app:scrollable_friction="0.075"
+                app:scrollable_maxScroll="149dp"
+                app:scrollable_scrollerFlywheel="false">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="205dp">
+                        <!--android:layout_height="UNKNOWN_DATA_0xcd01">-->
+
+
+                        <ImageView
+                            android:id="@+id/imgCover"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#929292"
+                            android:alpha="0.7"
+                            android:src="@drawable/dictionary"
+                            android:scaleType="centerCrop" />
+
+
+                        <LinearLayout
+                            android:id="@+id/lnlTopBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="205dp"
+                            android:gravity="center_horizontal|center"
+                            android:orientation="vertical">
+                            <!--android:layout_height="UNKNOWN_DATA_0xcd01"-->
+
+
+                            <RelativeLayout
+                                android:layout_width="130dp"
+                                android:layout_height="97dp">
+                                <!--android:layout_width="UNKNOWN_DATA_0x8201"-->
+                                <!--android:layout_height="UNKNOWN_DATA_0x6101"-->
+
+
+                                <RelativeLayout
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true">
+                                    <!--android:layout_height="UNKNOWN_DATA_0x5001"-->
+                                    <!--android:layout_width="UNKNOWN_DATA_0x5001">-->
+
+
+                                    <ImageView
+                                        android:id="@+id/imgRestaurantLogo"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:adjustViewBounds="true"
+                                        android:background="@drawable/shape_border_rectangle_default"
+                                        android:padding="1dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ph_snappfood" />
+                                    <!--android:layout_width="UNKNOWN_DATA_0x5001"-->
+                                    <!--android:layout_height="UNKNOWN_DATA_0x5001"-->
+
+
+                                    <ir.msit87.mydigistore.view.AMTextView
+                                        android:id="@+id/txtCloseOverlay"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_margin="1dp"
+                                        android:background="@drawable/shape_restaurant_close"
+                                        android:gravity="top|bottom|start|end|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                        android:maxLines="1"
+                                        android:text="از 100 دقیقه دیگر"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10dp"
+                                        android:visibility="gone" />
+                                    <!--<com.zoodfood.android.utils.RTextView-->
+                                    <!--style="@style/iranSansNormal"-->
+                                    <!--android:layout_width="UNKNOWN_DATA_0x5a01"-->
+                                    <!--android:layout_height="UNKNOWN_DATA_0x5a01"-->
+                                    <!--android:minTextSize="5dp"-->
+
+
+                                </RelativeLayout>
+
+
+                                <ir.msit87.mydigistore.view.AMTextView
+                                    android:id="@+id/txtDiscount"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ic_discount_circle"
+                                    android:gravity="center_vertical|center_horizontal|center"
+                                    android:text="20%"
+                                    android:textColor="#ffffff"
+                                    android:textSize="16dp"
+                                    android:visibility="invisible"
+                                    app:fontStyle="regular" />
+                                <!--<com.hollowsoft.library.fontdroid.TextView-->
+                                <!--style="@style/iranSansBold"-->
+                                <!--android:layout_height="UNKNOWN_DATA_0x3001"-->
+                                <!--android:layout_width="UNKNOWN_DATA_0x3001"-->
+                                <!--android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"-->
+
+
+                            </RelativeLayout>
+
+
+                            <ir.msit87.mydigistore.view.AMTextView
+                                android:id="@+id/txtRestaurantName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:paddingTop="3dp"
+                                android:text="سوپر مارکت شاهین"
+                                android:textColor="@color/textColorLightPrimary"
+                                android:textSize="16dp"
+                                app:fontStyle="bold" />
+                            <!--<com.zoodfood.android.utils.RTextView-->
+                            <!--style="@style/iranSansBold"-->
+                            <!--app:textStyle="bold" />-->
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:orientation="horizontal">
+
+
+                                <!--<LinearLayout-->
+                                <!--android:id="@+id/lnlBadgeContainer"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_marginRight="10dp"-->
+                                <!--android:gravity="center_vertical|center_horizontal|center|"-->
+                                <!--android:orientation="horizontal" />-->
+
+                                <ir.msit87.mydigistore.view.AMTextView
+                                    android:id="@+id/txtRestaurantRate"
+                                    android:layout_width="36dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/restaurant_list_rating_bg"
+                                    android:gravity="center_vertical|center_horizontal|center"
+                                    android:lines="1"
+                                    android:paddingBottom="1dp"
+                                    android:paddingTop="1dp"
+                                    android:text="4.5"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14dp"
+                                    android:visibility="visible"
+                                    app:fontStyle="regular" />
+                                <!--<com.hollowsoft.library.fontdroid.TextView-->
+                                <!--style="@style/iranSansMedium"-->
+                                <!--android:layout_height="UNKNOWN_DATA_0x1901"-->
+                                <!--android:layout_width="UNKNOWN_DATA_0x2401"-->
+                                <!--android:visibility="invisible"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:minTextSize="10dp"-->
+
+
+                            </LinearLayout>
+
+
+                            <ir.msit87.mydigistore.view.AMTextView
+                                android:id="@+id/txtRestaurantAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:lines="1"
+                                android:text="خیابان ستارخان-حیابان شادمان"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:visibility="gone" />
+                            <!--<com.zoodfood.android.utils.RTextView-->
+                            <!--style="@style/iranSansNormal"-->
+
+
+                            <LinearLayout
+                                android:id="@+id/lnlPreOrderContainer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:visibility="visible">
+
+                                <ir.msit87.mydigistore.view.AMTextView
+                                    android:id="@+id/txtPreOrderButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center_vertical|center_horizontal|center|"
+                                    android:lines="1"
+                                    android:padding="4dp"
+                                    android:paddingBottom="1dp"
+                                    android:text="همین الان - تا نیم ساعت دیگه"
+
+                                    android:textColor="#ffffff"
+                                    android:textSize="14dp"
+                                    app:fontStyle="regular" />
+                                <!--<com.hollowsoft.library.fontdroid.TextView-->
+                                <!--android:id="@+id/txtPreOrderButton"-->
+                                <!--style="@style/iranSansMedium"-->
+                                <!--android:text="پیش سفارش"-->
+                                <!--android:padding="4dp"-->
+                                <!--android:paddingBottom="1dp"-->
+
+                                <RelativeLayout
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp">
+                                    <!--android:layout_width="UNKNOWN_DATA_0x1201"-->
+                                    <!--android:layout_height="UNKNOWN_DATA_0x1201">-->
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@mipmap/clock_background" />
+                                    <!--android:layout_width="UNKNOWN_DATA_0x1201"-->
+                                    <!--android:layout_height="UNKNOWN_DATA_0x1201"-->
+
+                                    <ImageView
+                                        android:id="@+id/imgBigHand"
+                                        android:layout_width="1dp"
+                                        android:layout_height="18dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:paddingBottom="8.5dp"
+                                        android:paddingTop="2.5dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@mipmap/clock_big_hand"
+                                        android:visibility="visible" />
+                                    <!--android:layout_width="UNKNOWN_DATA_0xc00021"-->
+                                    <!--android:layout_height="UNKNOWN_DATA_0x1201"-->
+
+
+                                    <ImageView
+                                        android:id="@+id/imgSmallHand"
+                                        android:layout_width="1dp"
+                                        android:layout_height="18dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:paddingBottom="8.5dp"
+                                        android:paddingTop="4dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@mipmap/clock_small_hand" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffa0"
+                        android:visibility="visible"
+                        app:tabIndicatorColor="@color/colorAccent"
+                        app:tabIndicatorHeight="10dp"
+                        app:tabMode="scrollable" />
+                    <!--<com.zoodfood.android.utils.TabsLayout-->
+                    <!--android:visibility="gone" />-->
+
+
+                    <RelativeLayout
+                        android:id="@+id/mainTabsParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+                        <!--android:layout_height="UNKNOWN_DATA_0x3201"-->
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="-2dp"
+                            android:background="#dcdcdc" />
+                        <!--android:layout_height="UNKNOWN_DATA_0x201"-->
+
+                        <io.karim.MaterialTabs
+                            android:id="@+id/materialTabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                            app:mtIndicatorColor="@color/colorPrimary"
+                            app:mtIndicatorHeight="2dp"
+                            app:mtMrlRippleAlpha="0.0"
+                            app:mtMrlRippleColor="#106000"
+                            app:mtMrlRippleHighlightColor="#106000"
+                            app:mtPaddingMiddle="false"
+                            app:mtSameWeightTabs="true"
+                            app:visibility="visible" />
+                        <!--app:mtMrlRippleColor="0x106000d"-->
+                        <!--app:mtMrlRippleHighlightColor="0x106000d"-->
+                        <!---->
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:paddingBottom="100dp" />
+                    <!--<com.zoodfood.android.View.NoSwipeViewPager-->
+
+
+                </RelativeLayout>
+
+
+            </ru.noties.scrollable.ScrollableLayout>
+
+
+            <include layout="@layout/toolbar" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabSearch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_search_black"
+                android:tint="#ffffff"
+                android:visibility="visible"
+                app:backgroundTint="@color/colorOrange"
+                app:elevation="5dp" />
+            <!--android:layout_width="UNKNOWN_DATA_0x2301"-->
+            <!--android:layout_height="UNKNOWN_DATA_0x2301"-->
+            <!--app:fabSize="1" />-->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rltBasketBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0061"-->
+
+
+            <LinearLayout
+                android:id="@+id/lnlBasketBarContainer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="false"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+                <!--android:layout_height="UNKNOWN_DATA_0x3c01"-->
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtBasketBarLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="مشاهده سبد خرید"
+                    android:textColor="@color/textColorLightPrimary"
+                    android:textIsSelectable="false"
+                    android:textSize="20dp" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+                <!--android:id="@+id/txtBasketBarLabel"-->
+                <!--style="@style/iranSansNormal"-->
+                <!--android:textAppearance="?unknown_attr_ref: 1010041"-->
+                <!--android:textSize="@dimen/textSizeBottomButton" />-->
+
+
+                <ImageView
+                    android:id="@+id/imgBasketBarIcon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/action_bar_ic_basket" />
+                <!--android:layout_width="UNKNOWN_DATA_0x2401"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x2401"-->
+
+            </LinearLayout>
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtBasketItemCount"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/food_count_circle_bg"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="۳"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/basketItemCountTextSize" />
+            <!--<com.zoodfood.android.utils.RTextView-->
+            <!--android:id="@+id/txtBasketItemCount"-->
+            <!--style="@style/iranSansBold"-->
+            <!--android:layout_width="UNKNOWN_DATA_0x2801"-->
+            <!--android:layout_height="UNKNOWN_DATA_0x2801"-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fillViewport="true">
+        <!--android:layout_height="UNKNOWN_DATA_0x1"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtTitle"
+                style="@style/TopDescription"
+                android:contentDescription="introduce restaurant"
+                android:text="@string/introduceMarket"
+                tools:ignore="HardcodedText" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--style="@style/TopDescription"-->
+            <!--android:layout_height="UNKNOWN_DATA_0x7f0a00fb"-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorCardBackground"
+                android:orientation="vertical">
+                <!--<LinearLayout-->
+                <!--style="@style/InputContainer"-->
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout style="@style/InputRowContainer">
+                    <!--<LinearLayout-->
+                    <!--style="@style/InputRowContainer"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtRestaurantName"
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="restaurant name"
+                        android:hint="@string/marketName" />
+                    <!--<com.hollowsoft.library.fontdroid.EditText-->
+                    <!--android:id="@+id/edtRestaurantName"-->
+                    <!--style="@style/InputRowEditText"-->
+                    <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_restaurant_gray" />
+                    <!--style="@style/InputRowIcon"-->
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0098"-->
+                    <!--android:src="@drawable/ic_restaurant_gray" />-->
+
+
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout style="@style/InputRowContainer">
+                    <!--<LinearLayout-->
+                    <!--style="@style/InputRowContainer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093">-->
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtCityName"
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="city name"
+                        android:hint="@string/cityName"
+                        tools:ignore="ContentDescription,HardcodedText" />
+                    <!--<com.hollowsoft.library.fontdroid.EditText-->
+                    <!--android:id="@+id/edtCityName"-->
+                    <!--style="@style/InputRowEditText"-->
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_location_gray" />
+                    <!--<ImageView-->
+                    <!--style="@style/InputRowIcon"-->
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:src="@drawable/ic_location_gray" />-->
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout style="@style/InputRowContainer">
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtAddress"
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="address"
+                        android:hint="@string/address" />
+                    <!--<com.hollowsoft.library.fontdroid.EditText-->
+
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_location_gray" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout style="@style/InputRowContainer">
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtRestaurantPhoneNumber"
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="restaurant phone number"
+                        android:hint="@string/marketPhoneNumber"
+                        android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_telephone_gray" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout style="@style/InputRowContainer">
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtUserName"
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="your name"
+                        android:hint="@string/yourName" />
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_user_gray" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout style="@style/InputRowContainer">
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtUserPhoneNumber"
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="your phone number"
+                        android:hint="@string/yourPhoneNumber"
+                        android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_phone_gray" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout style="@style/InputRowContainer">
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtUserEmail"
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="your email address"
+                        android:hint="@string/yourEmail" />
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_email_gray" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a00e3"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a00e1"-->
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout
+                    style="@style/InputRowContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switchIsYouRestaurantOwner"
+                        android:layout_width="45dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a00e3"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a00e1"-->
+                    <!--android:background="0x0"-->
+                    <ir.msit87.mydigistore.view.AMEditText
+                        style="@style/InputRowEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:contentDescription="are you owner of restaurant?"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:text="@string/isYouMarketOwner"
+                        android:textColor="@color/textColorDarkPrimary"
+                        android:textSize="@dimen/textSizeInput" />
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:minHeight="10dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lnlInsertInformationButton"
+        style="@style/BottomButtonContainer">
+        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0065">-->
+
+        <ir.msit87.mydigistore.view.AMTextView
+            style="@style/BottomButtonLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insertInformation" />
+        <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+        <ImageView
+            style="@style/BottomButtonIcon"
+            android:contentDescription="submit"
+            android:src="@drawable/ic_introduce_restaurant_white" />
+        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0067"-->
+        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0066"-->
+        <!---->
+    </LinearLayout>
+
+
+</LinearLayout>

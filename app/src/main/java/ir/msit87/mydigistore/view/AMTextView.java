@@ -27,18 +27,18 @@ public class AMTextView extends TextView {
 
     public AMTextView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        setUp(context, null);
+        setUp(context, attrs);
     }
 
     public AMTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setUp(context, null);
+        setUp(context, attrs);
     }
 
     @TargetApi(21)
     public AMTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setUp(context, null);
+        setUp(context, attrs);
     }
 
     private void setUp(Context context, AttributeSet attrs) {

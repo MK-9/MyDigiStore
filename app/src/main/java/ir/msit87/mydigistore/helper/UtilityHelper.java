@@ -24,6 +24,7 @@ import android.widget.EditText;
 //import ir.msit87.smarthouse.SmartFrameWork.ui.custom.PickerDialogController;
 //import ir.msit87.smarthouse.SmartFrameWork.ui.custom.PickerDialogController.PickerDialogResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+
 import eu.amirs.JSON;
 //import io.fabric.sdk.android.services.common.IdManager;
 import java.lang.reflect.Field;
@@ -45,17 +46,17 @@ public class UtilityHelper {
     }
 
     /**
-     public static void checkPlayServicesAndAskToUpdate(final Context context) {
-     if (!checkPlayServices(context)) {
-     PickerDialogController.showYesNoDialog("جهت استفاده کامل از قابلیت‌های اسپارد لازم است خدمات گوگل پلی را به روز رسانی نمائید.", context, new PickerDialogResult() {
-     public void onFinish(JSON data) {
-     if (data.key("ok").booleanValue()) {
-     context.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("market://details?id=com.google.android.gms")));
-     }
-     }
-     });
-     }
-     }
+     * public static void checkPlayServicesAndAskToUpdate(final Context context) {
+     * if (!checkPlayServices(context)) {
+     * PickerDialogController.showYesNoDialog("جهت استفاده کامل از قابلیت‌های اسپارد لازم است خدمات گوگل پلی را به روز رسانی نمائید.", context, new PickerDialogResult() {
+     * public void onFinish(JSON data) {
+     * if (data.key("ok").booleanValue()) {
+     * context.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("market://details?id=com.google.android.gms")));
+     * }
+     * }
+     * });
+     * }
+     * }
      */
 
 
@@ -83,6 +84,14 @@ public class UtilityHelper {
         return z;
     }
 
+//    public static String setEnglishNumToPersian(String text){
+//        //String refformatText = text.su
+//        for (int i = 0; i < text.length() ; i++) {
+//
+//        }
+//        return text;
+//    }
+
     public static boolean shabaValidation(String shaba) {
         if (shaba.length() != 26) {
             return false;
@@ -94,29 +103,29 @@ public class UtilityHelper {
     }
 
     /**
-     public static void openUrl(Context context, String url) {
-     if (url != null) {
-     try {
-     if (url.length() < 3) {
-     return;
-     }
-     if (url.startsWith("http://")) {
-     context.startActivity(new Intent("android.intent.action.VIEW", Uri.parse(url)));
-     } else if (url.startsWith("tel://")) {
-     intent = new Intent("android.intent.action.DIAL");
-     intent.setData(Uri.parse("tel:" + url.replace("tel://", "")));
-     context.startActivity(intent);
-     } else if (url.toLowerCase().startsWith("espardus://fetch:")) {
-     DataManagement.getInstance().fetchSectionByName(url.toLowerCase().replace("espardus://fetch:", ""));
-     } else {
-     intent = new Intent("android.intent.action.VIEW");
-     intent.setData(Uri.parse(url));
-     context.startActivity(intent);
-     }
-     } catch (Exception e) {
-     }
-     }
-     }
+     * public static void openUrl(Context context, String url) {
+     * if (url != null) {
+     * try {
+     * if (url.length() < 3) {
+     * return;
+     * }
+     * if (url.startsWith("http://")) {
+     * context.startActivity(new Intent("android.intent.action.VIEW", Uri.parse(url)));
+     * } else if (url.startsWith("tel://")) {
+     * intent = new Intent("android.intent.action.DIAL");
+     * intent.setData(Uri.parse("tel:" + url.replace("tel://", "")));
+     * context.startActivity(intent);
+     * } else if (url.toLowerCase().startsWith("espardus://fetch:")) {
+     * DataManagement.getInstance().fetchSectionByName(url.toLowerCase().replace("espardus://fetch:", ""));
+     * } else {
+     * intent = new Intent("android.intent.action.VIEW");
+     * intent.setData(Uri.parse(url));
+     * context.startActivity(intent);
+     * }
+     * } catch (Exception e) {
+     * }
+     * }
+     * }
      */
 
     public static void delay(double secs, final DelayCallback delayCallback) {
@@ -152,21 +161,21 @@ public class UtilityHelper {
 //    }
 
     /**
-     public static String inMoneyFormat(long number, boolean showCurrency) {
-     boolean negative = false;
-     if (number < 0) {
-     number *= -1;
-     negative = true;
-     }
-     String money = persianNumber(String.format(Locale.US, "%,d", new Object[]{Long.valueOf(number)}).replace(",", "،"));
-     if (negative) {
-     money = money + " - ";
-     }
-     if (showCurrency) {
-     return money + " " + DataManagement.getInstance().getCurrency();
-     }
-     return money;
-     }
+     * public static String inMoneyFormat(long number, boolean showCurrency) {
+     * boolean negative = false;
+     * if (number < 0) {
+     * number *= -1;
+     * negative = true;
+     * }
+     * String money = persianNumber(String.format(Locale.US, "%,d", new Object[]{Long.valueOf(number)}).replace(",", "،"));
+     * if (negative) {
+     * money = money + " - ";
+     * }
+     * if (showCurrency) {
+     * return money + " " + DataManagement.getInstance().getCurrency();
+     * }
+     * return money;
+     * }
      */
 
     public static int getResourceIdByString(String resourceName, Class<?> c) {

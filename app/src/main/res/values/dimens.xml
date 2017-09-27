@@ -113,4 +113,12 @@
     <!--<dimen name="intercom_toolbar_image_background_alpha">0.05</dimen>-->
     <!--<dimen name="intercom_two_pane_conversation_percentage">0.6</dimen>-->
     <!--<dimen name="intercom_two_pane_inbox_percentage">0.4</dimen>-->
+
+    <dimen name="inputCardHeight">48dp</dimen>
+    <dimen name="inputEditTextLeftPadding">52dp</dimen>
+    <dimen name="inputIconHeight">36dp</dimen>
+    <dimen name="inputIconMarginRight">12dp</dimen>
+    <dimen name="inputIconPadding">7dp</dimen>
+    <dimen name="inputIconWidth">36dp</dimen>
+
 </resources>

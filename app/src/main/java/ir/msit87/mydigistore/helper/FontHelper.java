@@ -10,8 +10,8 @@ import java.util.List;
 
 public class FontHelper {
 
-    public static String  IRANSansMOBILE_REGULAR = "IRANSansMobile.ttf";
-    public static String  IRANSansMOBILE_BOLD = "IRANSansMobile_Bold.ttf";
+    public static String  IRANSansMOBILE_REGULAR = "iran_sans.ttf";
+    public static String  IRANSansMOBILE_BOLD = "iran_sans_bold.ttf";
     public static String  IRANSansMOBILE_Light = "IRANSansMobile_Light.ttf";
     public static String  IRANSansMOBILE_Medium = "IRANSansMobile_Medium.ttf";
     public static String  IRANSansMOBILE_UltraLight = "IRANSansMobile_UltraLight.ttf";

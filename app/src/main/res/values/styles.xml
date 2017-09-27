@@ -8,5 +8,87 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TopDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">95dp</item>
+        <item name="android:textSize">@dimen/textSizeTopDescription</item>
+        <item name="android:textColor">@color/textColorTopDescription</item>
+        <!--<item>11</item>-->
+        <item name="android:layout_marginLeft">9dp</item>
+        <item name="android:layout_marginTop">@dimen/topDescriptionMargin</item>
+        <!--<item>fonts/IRANSansMobile.ttf</item>-->
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="InputRowContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:background">@color/colorCardBackground</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+    <style name="InputRowIcon">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">@dimen/inputIconPadding</item>
+        <item name="android:layout_marginRight">@dimen/inputIconMarginRight</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="InputRowEditText">
+        <item name="android:background">@color/colorCardBackground</item>
+        <item name="android:textSize">@dimen/textSizeInput</item>
+        <item name="android:textColor">@color/textColorDarkInput</item>
+        <item name="android:textColorHint">@color/textColorDarkHint</item>
+        <item name="android:layout_marginRight">11dp</item>
+        <!--<item>11</item>-->
+        <!--<item>?unknown_ref: 0</item>-->
+        <item name="android:paddingLeft">@dimen/inputEditTextLeftPadding</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:gravity">center</item>
+        <!--<item>1</item>-->
+        <!--<item>true</item>-->
+        <!--<item>fonts/IRANSansMobile_Light.ttf</item>-->
+    </style>
+
+    <style name="BottomButtonContainer">
+        <!--<item>11</item>-->
+        <!--<item name="android:layout_marginRight">11dp</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">11dp</item>
+        <item name="android:background">@color/colorBottomButton</item>
+    </style>
+
+    <style name="BottomButtonLabel">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textSize">@dimen/textSizeBottomButton</item>
+        <item name="android:textColor">@color/textColorLightPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorLightPrimary</item>
+        <item name="android:background">@color/colorBottomButton</item>
+        <item name="android:gravity">center</item>
+        <!--<item>@dimen/textSizeBottomButton</item>-->
+        <!--<item>@color/textColorLightPrimary</item>-->
+        <!--<item>11</item>-->
+        <!--<item>@color/colorBottomButton</item>-->
+        <!--<item>4dp</item>-->
+        <!--<item>fonts/IRANSansMobile_Medium.ttf</item>-->
+    </style>
+
+    <style name="BottomButtonIcon">
+        <!--<item>4dp</item>-->
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
 
 </resources>

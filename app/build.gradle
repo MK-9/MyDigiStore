@@ -38,6 +38,15 @@ dependencies {
     compile 'com.google.android.gms:play-services-location:10.0.1'
     compile 'com.google.android.gms:play-services-maps:10.0.1'
 
+    //android-autofittextview
+    compile 'me.grantland:autofittextview:0.2.1'
+
+    //Scrollable
+    compile 'ru.noties:scrollable:1.3.0'
+
+    //MaterialTabs
+    compile 'io.karim:materialtabs:2.0.5'
+
     //FontDroid
     //compile 'com.github.moraisigor:fontdroid:version_1.0'
 

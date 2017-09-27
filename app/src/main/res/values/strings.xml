@@ -45,7 +45,12 @@
     <string name="intercom_updated_m_ago">Updated {delta} minutes ago</string>
     <string name="intercom_updated_w_ago">Updated {delta} weeks ago</string>
     <string name="introduceRestaurant">معرفی رستوران</string>
+    <string name="introduceMarket">معرفی سوپر مارکت</string>
+
     <string name="isYouRestaurantOwner">آیا شما مالک رستوران هستید؟</string>
+    <string name="isYouMarketOwner">آیا شما مالک سوپرمارکت هستید؟</string>
+
+
     <string name="newAddress">آدرس جدید</string>
     <string name="newPassword">رمز عبور جدید</string>
     <string name="newPasswordRepeat">تکرار رمز عبور جدید</string>
@@ -78,7 +83,12 @@
     <string name="password">رمز عبور</string>
     <string name="phoneNumber">شماره موبایل</string>
     <string name="restaurantName">نام رستوران</string>
+    <string name="marketName">نام سوپرمارکت</string>
+
     <string name="restaurantPhoneNumber">شماره تلفن رستوران</string>
+    <string name="marketPhoneNumber">شماره تلفن سوپرمارکت</string>
+
+
     <string name="sample_text_for_all_empty_textview">۱۰۰۰ تومان</string>
     <string name="saveAddress">ذخیره آدرس</string>
     <string name="searchBarHint">جستجو</string>

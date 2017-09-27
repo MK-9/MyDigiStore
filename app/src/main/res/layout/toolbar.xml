@@ -6,7 +6,7 @@
     android:layout_height="56dp"
     android:background="@color/colorTopBar"
     android:clipToPadding="false"
-    android:contentInsetEnd="0dp"
+    app:contentInsetEnd="0dp"
     app:contentInsetLeft="0dp"
     app:contentInsetRight="0dp"
     app:contentInsetStart="0dp"
@@ -18,9 +18,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:gravity="top|bottom|start|end|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
         <!--app:layout_height="UNKNOWN_DATA_0x3701"-->
 
 
@@ -31,7 +33,9 @@
             android:paddingBottom="10dp"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            android:paddingTop="10dp">
+            android:paddingTop="10dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp">
             <!--android:layout_width="UNKNOWN_DATA_0x2201"-->
             <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
 
@@ -53,7 +57,9 @@
             android:paddingBottom="10dp"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            android:paddingTop="10dp">
+            android:paddingTop="10dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
 
             <!--android:layout_width="UNKNOWN_DATA_0x2201"-->
             <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
@@ -102,7 +108,9 @@
             android:paddingBottom="10dp"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            android:paddingTop="10dp">
+            android:paddingTop="10dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp">
             <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
             <!--android:layout_width="UNKNOWN_DATA_0x2201"-->
 
