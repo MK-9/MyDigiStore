@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="login to your account"
+            android:orientation="vertical">
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtTopDescription"
+                style="@style/TopDescription"
+                android:layout_marginLeft="0dp"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="UNKNOWN_DATA_0x7f0a00fb"-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:orientation="horizontal">
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+
+                        <ir.msit87.mydigistore.view.AMEditText
+                            android:id="@+id/edtPhoneNumber"
+                            style="@style/NewAddressEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="93dp"
+                            android:layout_weight="1.0"
+                            android:contentDescription="phone number"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:hint="شماره تماس" />
+                        <!--<com.hollowsoft.library.fontdroid.EditText-->
+                        <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                        <ImageView
+                            style="@style/InputRowIcon"
+                            android:src="@drawable/ic_phone_dark" />
+                        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/divider_vertical" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="93dp"
+                            android:layout_weight="1.0">
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                            <ir.msit87.mydigistore.view.AMEditText
+                                android:id="@+id/edtCityName"
+                                style="@style/NewAddressEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:enabled="false"
+                                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:hint="@string/cityName" />
+                            <!--<com.hollowsoft.library.fontdroid.EditText-->
+
+
+                            <LinearLayout
+                                android:id="@+id/lnlCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="city name"
+                                android:orientation="vertical" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            style="@style/InputRowIcon"
+                            android:src="@drawable/ic_location_gray" />
+                        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:minHeight="96dp"
+                    android:orientation="horizontal">
+
+                    <ir.msit87.mydigistore.view.AMEditText
+                        android:id="@+id/edtAddress"
+                        style="@style/NewAddressEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="address text"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:hint="@string/address"
+                        android:maxLines="4"
+                        android:minHeight="96dp"
+                        android:minLines="3"
+                        android:paddingLeft="50dp" />
+                    <!--<com.hollowsoft.library.fontdroid.EditText-->
+
+
+                    <ImageView
+                        style="@style/InputRowIcon"
+                        android:src="@drawable/ic_location_gray" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+
+
+                </LinearLayout>
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnlActionButtonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnlShowAddressOnMapButton"
+                    style="@style/ActionButtonContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="2dp"
+                    android:contentDescription="login with cellphone number"
+                    android:orientation="horizontal">
+
+                    <ir.msit87.mydigistore.view.AMTextView
+                        style="@style/ActionButtonLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:text="نمایش موقعیت آدرس بر روی نقشه" />
+                    <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                    <ImageView
+                        style="@style/ActionButtonIcon"
+                        android:src="@drawable/ic_plus_orange"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" />
+
+
+            <LinearLayout
+                android:id="@+id/lnlActionButton"
+                style="@style/BottomButtonContainer"
+                android:contentDescription="login">
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0065"-->
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtActionLabel"
+                    style="@style/BottomButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chooseAddress" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <ImageView
+                    android:id="@+id/imgActionIcon"
+                    style="@style/BottomButtonIcon"
+                    android:src="@drawable/ic_login_white" />
+                <!--android:layout_width="UNKNOWN_DATA_0x7f0a0067"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0066"-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+

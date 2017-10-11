@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0">
+
+                        <com.google.android.gms.maps.MapView
+                            android:id="@+id/map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="choose address location on map" />
+                    </RelativeLayout>
+
+
+                    <include layout="@layout/divider_horizontal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+                            <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+
+
+                            <ir.msit87.mydigistore.view.AMEditText
+                                android:id="@+id/edtPhoneNumber"
+                                style="@style/NewAddressEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:layout_weight="1.0"
+                                android:contentDescription="phone number"
+                                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:hint="شماره تماس" />
+                            <!--<com.hollowsoft.library.fontdroid.EditText-->
+                            <!--android:id="@+id/edtPhoneNumber"-->
+                            <!--style="@style/NewAddressEditText"-->
+                            <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                            <ImageView
+                                style="@style/InputRowIcon"
+                                android:src="@drawable/ic_phone_dark" />
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+
+                        </LinearLayout>
+
+
+                        <include layout="@layout/divider_vertical" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:layout_weight="1.0">
+                                <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+                                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                                <ir.msit87.mydigistore.view.AMEditText
+                                    android:id="@+id/edtCityName"
+                                    style="@style/NewAddressEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:enabled="false"
+                                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                    android:hint="@string/cityName" />
+                                <!--<com.hollowsoft.library.fontdroid.EditText-->
+                                <!--android:id="@+id/edtCityName"-->
+                                <!--style="@style/NewAddressEditText"-->
+
+                                <LinearLayout
+                                    android:id="@+id/lnlCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="city name"
+                                    android:orientation="vertical" />
+                            </RelativeLayout>
+
+
+                            <ImageView
+                                style="@style/InputRowIcon"
+                                android:src="@drawable/ic_location_gray" />
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/divider_horizontal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:orientation="horizontal">
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+
+                        <ir.msit87.mydigistore.view.AMEditText
+                            android:id="@+id/edtAddress"
+                            style="@style/NewAddressEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1.0"
+                            android:contentDescription="address text"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:hint="@string/address"
+                            android:paddingLeft="50dp" />
+                        <!--<com.hollowsoft.library.fontdroid.EditText-->
+                        <!--android:id="@+id/edtAddress"-->
+                        <!--style="@style/NewAddressEditText"-->
+                        <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+
+                        <ImageView
+                            style="@style/InputRowIcon"
+                            android:src="@drawable/ic_location_gray" />
+                        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0095"-->
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnlAddOrEditAddressButton"
+                        style="@style/BottomButtonContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:contentDescription="Save address">
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0065"-->
+
+
+                        <ir.msit87.mydigistore.view.AMEditText
+                            android:id="@+id/txtAddOrEdit"
+                            style="@style/BottomButtonLabel_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/saveAddress" />
+                        <!--<com.hollowsoft.library.fontdroid.TextView-->
+                        <!--android:id="@+id/txtAddOrEdit"-->
+                        <!--style="@style/BottomButtonLabel"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+
+
+                        <ImageView
+                            android:id="@+id/imgActionIcon"
+                            style="@style/BottomButtonIcon"
+                            android:src="@drawable/ic_add_address" />
+                        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0067"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0066"-->
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>

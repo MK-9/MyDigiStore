@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+
+    <ir.msit87.mydigistore.view.AMTextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="شیلا"
+        android:textColor="@color/textColorDarkPrimary"
+        android:textSize="12dp" />
+    <!--<com.hollowsoft.library.fontdroid.TextView-->
+    <!--android:id="@+id/txtPrice"-->
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1.0"
+        android:background="@color/colorDivider" />
+    <!--android:layout_width="UNKNOWN_DATA_0x1"-->
+    <!--android:layout_height="UNKNOWN_DATA_0x101"-->
+
+
+    <ir.msit87.mydigistore.view.AMTextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="شیلا"
+        android:textColor="@color/textColorDarkPrimary"
+        android:textSize="12dp" />
+    <!--<com.hollowsoft.library.fontdroid.TextView-->
+    <!--android:id="@+id/txtName"-->
+    <!--style="@style/iranSansLight"-->
+
+</LinearLayout>

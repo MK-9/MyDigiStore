@@ -84,11 +84,195 @@
         <!--<item>fonts/IRANSansMobile_Medium.ttf</item>-->
     </style>
 
+    <style name="BottomButtonLabel_1">
+        <!--<item name="android:layout_width">25dp</item>-->
+        <!--<item name="android:layout_height">25dp</item>-->
+        <item name="android:textSize">@dimen/textSizeBottomButton</item>
+        <item name="android:textColor">@color/textColorLightPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorLightPrimary</item>
+        <item name="android:background">@color/colorBottomButton</item>
+        <item name="android:gravity">center</item>
+        <!--<item>@dimen/textSizeBottomButton</item>-->
+        <!--<item>@color/textColorLightPrimary</item>-->
+        <!--<item>11</item>-->
+        <!--<item>@color/colorBottomButton</item>-->
+        <!--<item>4dp</item>-->
+        <!--<item>fonts/IRANSansMobile_Medium.ttf</item>-->
+    </style>
+
     <style name="BottomButtonIcon">
         <!--<item>4dp</item>-->
         <item name="android:layout_width">25dp</item>
         <item name="android:layout_height">25dp</item>
         <item name="android:layout_marginLeft">4dp</item>
     </style>
+
+    <style name="BottomButtonIcon1">
+        <!--<item>4dp</item>-->
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <style name="SearchBarEditText">
+        <!--<item name="android:background">@color/colorCardBackground</item>-->
+
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+
+
+        <item name="android:textSize">@dimen/textSizeInput</item>
+        <item name="android:textColor">@color/textColorDarkInput</item>
+        <item name="android:textColorHint">@color/textColorDarkHint</item>
+
+        <!--<item>15</item>-->
+        <!--<item>?unknown_ref: 0</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>16dp</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>1</item>-->
+        <!--<item>true</item>-->
+    </style>
+
+
+    <style name="TopDescriptionAddressPrice">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">95dp</item>
+        <item name="android:textSize">@dimen/textSizeTopDescription</item>
+        <item name="android:textColor">@color/textColorTopDescription</item>
+        <!--<item>11</item>-->
+        <item name="android:layout_marginLeft">9dp</item>
+        <item name="android:layout_marginTop">@dimen/topDescriptionMargin</item>
+        <!--<item>fonts/IRANSansMobile.ttf</item>-->
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TopDescriptionAddressPriceSample">
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">95dp</item>-->
+        <item name="android:textSize">@dimen/textSizeTopDescription</item>
+        <item name="android:textColor">@color/textColorTopDescription</item>
+        <!--<item>11</item>-->
+        <item name="android:layout_marginLeft">9dp</item>
+        <item name="android:layout_marginTop">@dimen/topDescriptionMargin</item>
+        <!--<item>fonts/IRANSansMobile.ttf</item>-->
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="InputContainer">
+        <!--<item name="android:">@color/colorCardBackground</item>-->
+    </style>
+
+
+    <style name="ActionButtonContainer">
+        <item name="android:layout_marginLeft">11dp</item>
+        <!--<item>0</item>-->
+        <item name="android:background">@drawable/shape_border_button</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <!--<item>8dp</item>-->
+        <!--<item>4dp</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>4dp</item>-->
+        <item name="android:minWidth">@dimen/orangeButtonMinWidth</item>
+        <item name="android:minHeight">@dimen/orangeButtonMinHeight</item>
+    </style>
+
+
+    <style name="ActionButtonLabel">
+        <item name="android:textSize">@dimen/actionButtonTextSize</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <!--<item>@color/colorOrange</item>-->
+        <!--<item>fonts/IRANSansMobile.ttf</item>-->
+    </style>
+
+    <style name="ActionButtonIcon">
+        <item name="android:layout_marginLeft">4dp</item>
+        <!--<item>4dp</item>-->
+        <!--<item>2</item>-->
+    </style>
+
+
+    <style name="NewAddressEditText">
+        <!--<item name="android:background">@color/colorCardBackground</item>-->
+        <item name="android:background">#00ffffff</item>
+
+        <item name="android:textSize">@dimen/textSizeInput</item>
+        <item name="android:textColor">@color/textColorDarkInput</item>
+        <item name="android:textColorHint">@color/textColorDarkHint</item>
+
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+
+        <item name="android:gravity">center</item>
+
+        <!--<item>15</item>-->
+        <!--<item>?unknown_ref: 0</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>8dp</item>-->
+        <!--<item>fonts/IRANSansMobile_Light.ttf</item>-->
+    </style>
+
+    <style name="FactorDetailsContainer">
+        <!--<item>11</item>-->
+        <item name="android:layout_marginLeft">24dp</item>
+    </style>
+
+    <style name="FactorDetails">
+        <item name="android:textColorSecondary">@color/textColorDarkSecondary</item>
+        <item name="android:textSize">11dp</item>
+        <!--<item>11dp</item>-->
+        <!--<item>@color/textColorDarkSecondary</item>-->
+        <!--<item>2dp</item>-->
+    </style>
+
+
+    <style name="RestaurantDetailsTitle">
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textSize">15dp</item>-->
+        <item name="android:textColor">#000000</item>
+        <!--<item>#000000</item>-->
+        <!--<item>11</item>-->
+        <!--<item>2dp</item>-->
+
+        <item name="android:padding">2dp</item>
+
+        <!--<item>fonts/IRANSansMobile.ttf</item>-->
+    </style>
+
+    <style name="RestaurantDetailsDescription">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/n_text_color_gray</item>
+
+        <!--<item>11dp</item>-->
+        <!--<item>@color/n_text_color_gray</item>-->
+
+        <!--<item>11</item>-->
+
+        <item name="android:paddingTop">-2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <!--<item>2dp</item>-->
+        <!--<item>-2dp</item>-->
+        <!--<item>fonts/IRANSansMobile_Light.ttf</item>-->
+    </style>
+
+
+    <style name="RestaurantDetailsContainer">
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingBottom">13dp</item>
+    </style>
+
 
 </resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/restaurantListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:overScrollMode="never" />
+            <!--<com.zoodfood.android.View.LazyLoaderRecyclerView-->
+
+
+            <LinearLayout
+                android:id="@+id/lnlEmptyHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-28dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ph_restaurant_list" />
+                <!--android:layout_width="UNKNOWN_DATA_0xb401"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x8201"-->
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtEmptyHolderLabel"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="سوپرمارکت با مشخصات مورد نظر یافت نشد"
+                    android:textColor="#a6a6a6"
+                    android:textSize="14dp" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+                <!--android:id="@+id/txtEmptyHolderLabel"-->
+                <!--style="@style/iranSansBold"-->
+                <!--android:layout_width="UNKNOWN_DATA_0xdc01"-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical|center_horizontal|center">
+                <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="search phrase"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="false">
+                    <!--android:layout_width="UNKNOWN_DATA_0x12c01"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x2401"-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+
+
+                        <ImageView
+                            android:id="@+id/imgSearch"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:contentDescription="search button"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_search_black" />
+                        <!--android:layout_width="UNKNOWN_DATA_0x2401"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x2401"-->
+
+                        <ir.msit87.mydigistore.view.AMEditText
+                            android:id="@+id/edtSearch"
+                            style="@style/SearchBarEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:background="#00ffffff"
+                            android:hint="@string/searchBarHint"
+                            android:imeOptions="actionNone|actionGo|actionSearch|actionNext|actionDone|actionPrevious" />
+                        <!--<com.hollowsoft.library.fontdroid.EditText-->
+                        <!--style="@style/SearchBarEditText"-->
+                        <!--android:layout_width="UNKNOWN_DATA_0x1" />-->
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnlProgressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/materialProgressBar"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:indeterminate="true"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            app:mpb_progressStyle="horizontal"
+            app:mpb_useIntrinsicPadding="false" />
+        <!--app:layout_height="UNKNOWN_DATA_0x301"-->
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

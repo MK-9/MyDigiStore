@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/toolbar" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ir.msit87.mydigistore.view.AMTextView
+                        android:id="@+id/txtTitle"
+                        style="@style/TopDescription"
+                        android:contentDescription="edit your profile information"
+                        android:text="در این قسمت می توانید اطلاعات خود را ویرایش نمایید" />
+                    <!--<com.hollowsoft.library.fontdroid.TextView-->
+                    <!--android:id="@+id/txtTitle"-->
+                    <!--style="@style/TopDescription"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x7f0a00fb"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+
+
+                    <LinearLayout
+                        style="@style/InputContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <include layout="@layout/divider_horizontal" />
+
+
+                        <LinearLayout style="@style/InputRowContainer">
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093">-->
+
+
+                            <ir.msit87.mydigistore.view.AMEditText
+                                android:id="@+id/edtName"
+                                style="@style/InputRowEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:contentDescription="first name"
+                                android:hint="@string/activity_register_name" />
+                            <!--<com.hollowsoft.library.fontdroid.EditText-->
+
+                            <ImageView
+                                style="@style/InputRowIcon"
+                                android:src="@drawable/ic_user_gray" />
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0098"-->
+
+                        </LinearLayout>
+
+
+                        <include layout="@layout/divider_horizontal" />
+
+
+                        <LinearLayout style="@style/InputRowContainer">
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+                            <ir.msit87.mydigistore.view.AMEditText
+                                android:id="@+id/edtLastName"
+                                style="@style/InputRowEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:contentDescription="last name"
+                                android:hint="@string/activity_register_family_name" />
+                            <!--<com.hollowsoft.library.fontdroid.EditText-->
+
+
+                            <ImageView
+                                style="@style/InputRowIcon"
+                                android:src="@drawable/ic_user_gray" />
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0098"-->
+
+
+                        </LinearLayout>
+
+
+                        <include layout="@layout/divider_horizontal" />
+
+
+                        <LinearLayout style="@style/InputRowContainer">
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0093"-->
+
+
+                            <ir.msit87.mydigistore.view.AMEditText
+                                android:id="@+id/edtPhoneNumber"
+                                style="@style/InputRowEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:contentDescription="cellphone number"
+                                android:hint="@string/phoneNumber"
+                                android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+                            <!--<com.hollowsoft.library.fontdroid.EditText-->
+
+
+                            <ImageView
+                                style="@style/InputRowIcon"
+                                android:src="@drawable/ic_moblie_gray" />
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0095"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0098"-->
+
+
+                        </LinearLayout>
+
+
+                        <include layout="@layout/divider_horizontal" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/actionButtonMarginBottom"
+                        android:layout_marginTop="@dimen/actionButtonMarginTop"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/lnlChangePassword"
+                            style="@style/ActionButtonContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:layout_margin="@dimen/orangeButtonMargin"
+                            android:background="@drawable/shape_basket_list"
+
+                            android:contentDescription="change password"
+                            android:gravity="center">
+
+                            <ir.msit87.mydigistore.view.AMTextView
+                                android:id="@+id/txtSelectAddressFromMap"
+                                style="@style/ActionButtonLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:text="@string/changePassword" />
+
+
+                            <!--android:gravity="center_vertical|center_horizontal|center"-->
+                            <!--android:minHeight="32dp"-->
+                            <!--android:minWidth="96dp"-->
+                            <!--android:paddingBottom="2dp"-->
+                            <!--android:paddingLeft="8dp"-->
+                            <!--android:paddingRight="8dp"-->
+                            <!--android:paddingTop="2dp"/>-->
+
+                            <!--<ImageView-->
+                            <!--style="@style/ActionButtonIcon"-->
+                            <!--android:layout_width="15dp"-->
+                            <!--android:layout_height="15dp"-->
+                            <!--android:src="@drawable/ic_plus_orange" />-->
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/lnlIncrementCredit"
+                            style="@style/ActionButtonContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:layout_margin="@dimen/orangeButtonMargin"
+                            android:background="@drawable/shape_basket_list"
+
+                            android:contentDescription="increase credit"
+                            android:gravity="center">
+
+                            <ir.msit87.mydigistore.view.AMTextView
+                                android:id="@+id/txtIncrementCredit"
+                                style="@style/ActionButtonLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/increaseCredit" />
+                            <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                            <!--<ImageView-->
+                            <!--style="@style/ActionButtonIcon"-->
+                            <!--android:src="@drawable/ic_plus_orange" />-->
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/lnlAddressList"
+                            style="@style/ActionButtonContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:layout_margin="@dimen/orangeButtonMargin"
+                            android:background="@drawable/shape_basket_list"
+
+                            android:contentDescription="adderss list"
+                            android:gravity="center">
+
+                            <ir.msit87.mydigistore.view.AMTextView
+                                android:id="@+id/txtAddressList"
+                                style="@style/ActionButtonLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/addressList" />
+                            <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                            <!--<ImageView-->
+                            <!--style="@style/ActionButtonIcon"-->
+                            <!--android:src="@drawable/ic_plus_orange" />-->
+                            <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/lnlUserReviewList"
+                            style="@style/ActionButtonContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:layout_margin="@dimen/orangeButtonMargin"
+                            android:background="@drawable/shape_basket_list"
+
+                            android:contentDescription="your comments"
+                            android:gravity="center">
+
+                            <ir.msit87.mydigistore.view.AMTextView
+                                android:id="@+id/txtUserReviewList"
+                                style="@style/ActionButtonLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="نظرات شما" />
+                            <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+                            <!--<ImageView-->
+                            <!--style="@style/ActionButtonIcon"-->
+                            <!--android:src="@drawable/ic_plus_orange" />-->
+                            <!--&lt;!&ndash;android:layout_width="UNKNOWN_DATA_0x7f0a0058"&ndash;&gt;-->
+                            <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lnlActionButton"
+                        style="@style/BottomButtonContainer"
+
+                        android:contentDescription="save changes">
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0065"-->
+
+
+                        <ir.msit87.mydigistore.view.AMTextView
+                            style="@style/BottomButtonLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ثبت تغییرات" />
+                        <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                        <ImageView
+                            android:id="@+id/imgActionIcon"
+                            style="@style/BottomButtonIcon"
+                            android:src="@drawable/ic_action_white" />
+                        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0067"-->
+                        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0066"-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

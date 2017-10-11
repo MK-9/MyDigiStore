@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65000000"
+    android:padding="10dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/colorBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#55d3d3d3">
+                <!--android:background="@color/colorBigPopupTopBar">-->
+                <!--android:layout_height="UNKNOWN_DATA_0x6401"-->
+
+
+                <ImageView
+                    android:id="@+id/imgHide"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="18dp"
+                    android:src="@drawable/ic_close_white" />
+                <!--android:layout_width="UNKNOWN_DATA_0x3001"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x3001"-->
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="-60dp"
+                android:background="@drawable/shape_circle_image"
+                android:padding="28dp"
+                android:src="@drawable/lg_city" />
+            <!--android:layout_width="UNKNOWN_DATA_0x7801"-->
+            <!--android:layout_height="UNKNOWN_DATA_0x7801"-->
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="choose you city"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:minHeight="56dp"
+                android:text="شهر خود را انتخاب نمایید"
+                android:textColor="@color/textColorDarkPrimary"
+                android:textSize="@dimen/textSizePrimary" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--style="@style/iranSansMedium"-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/divider_horizontal" />
+
+
+                <LinearLayout
+                    android:id="@+id/lnlContentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lnlProgressContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.pnikosis.materialishprogress.ProgressWheel
+                        android:id="@+id/progressWheel"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        app:matProg_barColor="@color/colorOrange"
+                        app:matProg_barWidth="2dp"
+                        app:matProg_progressIndeterminate="true" />
+                    <!--android:layout_width="UNKNOWN_DATA_0x1901"-->
+                    <!--android:layout_height="UNKNOWN_DATA_0x1901"-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/shape_fillter_button_container">
+                <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtAccept"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:contentDescription="accept"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="تایید شهر انتخابی"
+                    android:textColor="@color/textColorLightPrimary"
+                    android:textSize="@dimen/textSizePrimary" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -26,6 +26,8 @@
             <ir.msit87.mydigistore.view.AMTextView
                 android:id="@+id/txtTitle"
                 style="@style/TopDescription"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
                 android:contentDescription="introduce restaurant"
                 android:text="@string/introduceMarket"
                 tools:ignore="HardcodedText" />

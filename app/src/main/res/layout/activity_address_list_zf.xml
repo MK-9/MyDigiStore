@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/lnlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/lytTopDescription"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="addresses list"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="horizontal">
+            <!--android:layout_height="UNKNOWN_DATA_0x7f0a00fb"-->
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtDeliveryPrice"
+                style="@style/TopDescriptionAddressPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--android:id="@+id/txtDeliveryPrice"-->
+            <!--style="@style/TopDescriptionAddressPrice"-->
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtTopDescription"
+                style="@style/TopDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/addressList" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--android:id="@+id/txtTopDescription"-->
+            <!--style="@style/TopDescription"-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytRelativeLayoutParent"
+            style="@style/InputContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnlAddNewAddressButton"
+            android:layout_below="@+id/lytTopDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="68dp"
+            android:background="@color/colorBackground"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/divider_horizontal" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/addressListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:overScrollMode="never" />
+
+
+            <LinearLayout
+                android:id="@+id/lytImportSnappAddresses"
+                style="@style/ActionButtonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="new address"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtSnapp"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:text="@string/snappAddress" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+                <!--android:id="@+id/txtSnapp"-->
+                <!--style="@style/ActionButtonLabel"-->
+
+                <ImageView
+                    style="@style/ActionButtonIcon"
+                    android:layout_width="28dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/ic_plus_orange" />
+                <!--<ImageView-->
+                <!--style="@style/ActionButtonIcon"-->
+                <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+                <!---->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnlNewAddress"
+                style="@style/ActionButtonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="new address"
+                android:orientation="horizontal">
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtNewAddress"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:text="@string/newAddress" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+                <!--android:id="@+id/txtNewAddress"-->
+                <!--style="@style/ActionButtonLabel"-->
+
+                <ImageView
+                    style="@style/ActionButtonIcon"
+                    android:layout_width="28dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/ic_plus_orange" />
+                <!--<ImageView-->
+                <!--style="@style/ActionButtonIcon"-->
+                <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

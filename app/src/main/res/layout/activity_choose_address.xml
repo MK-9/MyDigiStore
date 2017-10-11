@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtTitle"
+                style="@style/TopDescription"
+                android:contentDescription="choose your address"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="آدرس خود را انتخاب کنید" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="UNKNOWN_DATA_0x7f0a00fb"-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorCardBackground"
+                android:orientation="vertical">
+
+                <include layout="@layout/divider_horizontal" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/addressListRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnlNewAddress"
+                style="@style/ActionButtonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginBottom="@dimen/actionButtonMarginBottom"
+                android:layout_marginTop="@dimen/actionButtonMarginTop"
+                android:contentDescription="create new address"
+                android:orientation="horizontal"
+
+                android:background="@drawable/shape_basket_list"
+                android:gravity="center">
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtNewAddress"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:text="@string/newAddress" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <ImageView
+                    style="@style/ActionButtonIcon"
+                    android:src="@drawable/ic_plus_orange" />
+                <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnlSelectAddressFromMap"
+                style="@style/ActionButtonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/actionButtonMarginBottom"
+                android:layout_marginTop="@dimen/actionButtonMarginTop"
+                android:orientation="horizontal"
+                android:visibility="gone"
+
+                android:background="@drawable/shape_basket_list"
+
+                android:gravity="center">
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtSelectAddressFromMap"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:text="@string/selectAddressFromMap" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <!--<ImageView-->
+                    <!--style="@style/BottomButtonIcon"-->
+                    <!--android:src="@drawable/ic_delete_orange" />-->
+                <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" />
+
+
+            <LinearLayout
+                android:id="@+id/lnlActionButton"
+                style="@style/BottomButtonContainer"
+                android:contentDescription="commit actions">
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0065"-->
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtActionButtonLabel"
+                    style="@style/BottomButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choosePaymentType" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <ImageView
+                    android:id="@+id/imgActionIcon"
+                    style="@style/BottomButtonIcon"
+                    android:src="@drawable/ic_user_white" />
+                <!--android:layout_width="UNKNOWN_DATA_0x7f0a0067"-->
+                <!--android:layout_height="UNKNOWN_DATA_0x7f0a0066"-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

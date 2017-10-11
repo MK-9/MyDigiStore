@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/favouriteRestaurantList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+
+    <LinearLayout
+        android:id="@+id/lnlEmptyHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-28dp"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ph_favourite_restaurant" />
+        <!--android:layout_width="UNKNOWN_DATA_0xb401"-->
+        <!--android:layout_height="UNKNOWN_DATA_0x8201"-->
+
+
+        <ir.msit87.mydigistore.view.AMTextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="شما تا به حال رستورانی را به عنوان رستوران مورد علاقه خود ثبت نکرده اید"
+            android:textColor="#a6a6a6"
+            android:textSize="14dp" />
+        <!--<com.hollowsoft.library.fontdroid.TextView-->
+        <!--style="@style/iranSansBold"-->
+        <!--android:layout_width="UNKNOWN_DATA_0xdc01"-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,459 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_finish_page"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal">
+        <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
+
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:contentDescription="go to home page"
+            android:padding="16dp"
+            android:src="@drawable/ic_home_gray" />
+        <!--android:layout_width="UNKNOWN_DATA_0x3801"-->
+        <!--android:layout_height="UNKNOWN_DATA_0x3801"-->
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="your order has been submited successfully"
+        android:src="@drawable/ic_tick_green" />
+    <!--android:layout_width="UNKNOWN_DATA_0x6001"-->
+    <!--android:layout_height="UNKNOWN_DATA_0x6001"-->
+
+
+    <ir.msit87.mydigistore.view.AMTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="your order has been submited successfully"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="سفارش شما با موفقیت ثبت شد"
+        android:textColor="@color/textColorTopDescription"
+        android:textSize="14dp"
+        app:fontStyle="bold" />
+    <!--<com.hollowsoft.library.fontdroid.TextView-->
+    <!--style="@style/iranSansBold"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp">
+
+
+            <LinearLayout
+                style="@style/FactorDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtTotalPrice"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:lines="1"
+                    android:text="۰" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical|center_horizontal|center">
+
+                    <include layout="@layout/divider_horizontal" />
+
+
+                </LinearLayout>
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="total amount"
+                    android:text="مجموع" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/FactorDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtDeliveryCost"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:lines="1"
+                    android:text="۰" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical|center_horizontal|center">
+
+                    <include layout="@layout/divider_horizontal" />
+
+
+                </LinearLayout>
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtDeliveryType"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="delivery price"
+                    android:text="هزینه ارسال" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytFoodDiscount"
+                style="@style/FactorDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtFoodDiscount"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:lines="1"
+                    android:text="۰" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical|center_horizontal|center">
+
+                    <include layout="@layout/divider_horizontal" />
+
+                </LinearLayout>
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="discount price"
+                    android:text="تخفیف" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytDiscount"
+                style="@style/FactorDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtDiscount"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:lines="1"
+                    android:text="۰" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical|center_horizontal|center">
+
+                    <include layout="@layout/divider_horizontal" />
+
+                </LinearLayout>
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="special discount price"
+                    android:text="تخفیف ویژه شما" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytCredit"
+                style="@style/FactorDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtCredit"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:lines="1"
+                    android:text="۰" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical|center_horizontal|center">
+
+
+                    <include layout="@layout/divider_horizontal" />
+
+
+                </LinearLayout>
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="cash back gift credit"
+                    android:text="اعتبار هدیه" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytContainerPrice"
+                style="@style/FactorDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtContainerPrice"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:lines="1"
+                    android:text="۰" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical|center_horizontal|center">
+
+
+                    <include layout="@layout/divider_horizontal" />
+
+
+                </LinearLayout>
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="packing price"
+                    android:text="هزینه بسته بندی" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytTax"
+                style="@style/FactorDetailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    android:id="@+id/txtTax"
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:lines="1"
+                    android:text="۰" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical|center_horizontal|center">
+
+
+                    <include layout="@layout/divider_horizontal" />
+
+
+                </LinearLayout>
+
+
+                <ir.msit87.mydigistore.view.AMTextView
+                    style="@style/FactorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="tax price"
+                    android:text="مالیات" />
+                <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_factor_total_price"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:minHeight="36dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="8dp">
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtMainTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:lines="1"
+                android:text="۰"
+                android:textColor="#000000"
+                android:textSize="11dp" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--style="@style/iranSansMedium"-->
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0" />
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="total payment amount"
+                android:text="قیمت کل"
+                android:textColor="#000000"
+                android:textSize="11dp" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--style="@style/iranSansMedium"-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnlOrderFollowUp"
+        style="@style/ActionButtonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_marginTop="10dp"
+        android:contentDescription="follow your order"
+        android:gravity="center">
+
+
+        <ir.msit87.mydigistore.view.AMTextView
+            android:id="@+id/txtOrderFollowUp"
+            style="@style/ActionButtonLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="پیگیری سفارش" />
+        <!--<com.hollowsoft.library.fontdroid.TextView-->
+        <!--android:id="@+id/txtOrderFollowUp"-->
+        <!--style="@style/ActionButtonLabel"-->
+
+
+        <!--<ImageView-->
+        <!--style="@style/ActionButtonIcon"-->
+        <!--android:src="@drawable/ic_plus_orange"-->
+        <!--android:visibility="gone" />-->
+        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0058"-->
+        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0057"-->
+
+    </LinearLayout>
+
+</LinearLayout>

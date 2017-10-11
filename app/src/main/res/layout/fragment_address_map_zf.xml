@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ir.msit87.mydigistore.view.AMTextView
+        android:id="@+id/txtTopDescription"
+        style="@style/TopDescription"
+        android:layout_marginLeft="0dp"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:maxLines="4"
+        android:minHeight="@dimen/topDescriptionHeight"
+        android:text="" />
+    <!--<com.hollowsoft.library.fontdroid.TextView-->
+    <!--android:id="@+id/txtTopDescription"-->
+    <!--style="@style/TopDescription"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+
+
+    <include layout="@layout/divider_horizontal" />
+
+    <ir.msit87.mydigistore.view.AMTextView
+        android:id="@+id/txtAddress"
+        style="@style/NewAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:maxLines="4"
+        android:text="" />
+    <!--<com.hollowsoft.library.fontdroid.TextView-->
+
+    <include layout="@layout/divider_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+        <!--android:layout_height="UNKNOWN_DATA_0x1"-->
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="choose address location on map" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlActionButton"
+        style="@style/BottomButtonContainer"
+        android:contentDescription="login">
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0065"-->
+
+        <ir.msit87.mydigistore.view.AMTextView
+            android:id="@+id/txtActionLabel"
+            style="@style/BottomButtonLabel"
+            android:text="ثبت موقعیت" />
+        <!--<com.hollowsoft.library.fontdroid.TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <ImageView
+            android:id="@+id/imgActionIcon"
+            style="@style/BottomButtonIcon"
+            android:src="@drawable/ic_location_white" />
+        <!--android:layout_width="UNKNOWN_DATA_0x7f0a0067"-->
+        <!--android:layout_height="UNKNOWN_DATA_0x7f0a0066"-->
+
+    </LinearLayout>
+
+</LinearLayout>

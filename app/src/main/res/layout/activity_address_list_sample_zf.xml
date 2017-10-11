@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/lnlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/lytTopDescription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="addresses list"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:orientation="horizontal">
+            <!--android:layout_height="UNKNOWN_DATA_0x7f0a00fb"-->
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtDeliveryPrice"
+                style="@style/TopDescriptionAddressPriceSample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp" />
+            <!--<com.hollowsoft.library.fontdroid.TextView-->
+            <!--android:id="@+id/txtDeliveryPrice"-->
+            <!--style="@style/TopDescriptionAddressPrice"-->
+
+
+            <ir.msit87.mydigistore.view.AMTextView
+                android:id="@+id/txtTopDescription"
+                style="@style/TopDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/addressList" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytRelativeLayoutParent"
+            style="@style/InputContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnlAddNewAddressButton"
+            android:layout_below="@+id/lytTopDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="68dp"
+            android:background="@color/colorBackground"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="vertical">
+
+            <include layout="@layout/divider_horizontal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/addressListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
